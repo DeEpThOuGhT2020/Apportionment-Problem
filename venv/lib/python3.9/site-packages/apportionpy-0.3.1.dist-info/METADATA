@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: apportionpy
+Version: 0.3.1
+Summary: A Python package for apportionment.
+Home-page: UNKNOWN
+Author: Brandon Rorie
+Author-email: ticer1999@gmail.com
+License: UNKNOWN
+Keywords: python,apportionment,apportion,hamilton,webster,adam,jefferson,Huntington,method,equal,proportions
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE.TXT
+
+A package that allows users to apportion seats to states based on population figures.
+
+This apportionment package calculates results for the following methods:
+ - Hamilton's method
+ - Jefferson's method
+ - Adam's method
+ - Webster's method
+ - Huntington Hill's method
+ - Method of equal proportions
+
+Hamilton's method calculations:
+ - fair shares
+ - initial fair shares
+ - initial quotas
+ - final quotas
+ - initial divisor
+ - modified divisor
+
+Jefferson's method calculations:
+ - fair shares
+ - initial fair shares
+ - initial quotas
+ - final quotas
+ - initial divisor
+ - modified divisor
+ - divisor history
+
+Adam's method calculations:
+ - fair shares
+ - initial fair shares
+ - initial quotas
+ - final quotas
+ - initial divisor
+ - modified divisor
+ - divisor history
+
+Webster's method calculations:
+ - fair shares
+ - initial fair shares
+ - initial quotas
+ - final quotas
+ - initial divisor
+ - modified divisor
+ - divisor history
+
+Huntington Hill's method calculations:
+ - fair shares
+ - initial fair shares
+ - initial quotas
+ - final quotas
+ - initial geometric means
+ - final geometric means
+ - initial divisor
+ - modified divisor
+
+Method of equal proportions calculations:
+ - fair shares
+
+Experimental features:
+ - estimate the lowest possible divisor possible
+ - estimate the highest possible divisor possible
+
+
