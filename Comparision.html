@@ -1,0 +1,46 @@
+<html> 
+  <head> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        const select_options = ["Select", "Adam", "Hamilton", "Webster","Huntington Hill","Jefferson","Seats","Quota"];
+    </script>
+    <script>
+        $(function(){
+            $(document).change(function(){
+                var i = $("#purpose1").val();
+                var j = $("#purpose2").val();
+                if(i!=0 && j!=0){
+                  var y = "<div id='"+select_options[i].replace(/\s/g,"")+"_"+select_options[j].replace(/\s/g,"")+"'><iframe src='./ALL_HTMLS/"+ select_options[i] +"_"+select_options[j]+".html' scrolling='no' style='margin: 10; height: 90%; width:98%; overflow-y: hidden'></iframe></div>";
+                  document.getElementById("all_divs").innerHTML = y;
+                }
+            });
+           
+        });
+    </script>
+  </head> 
+
+  <body> 
+    <select id='purpose1'>
+    </select>
+    <select id='purpose2'>
+    </select>
+    <div id="all_divs"></div>
+    <script>
+        var x ="",z="", i;
+        for (i=0; i< select_options.length; i++) {
+          x = x + "<option value='" + i + "'>" + select_options[i] + "</option>";
+          if(i!=select_options.length-1){
+            z=x
+          }
+        }
+        // for (i=1; i< select_options.length-1; i++) {
+        //   for (j=1; j< select_options.length; j++) {
+        //     y = y + "<div style='display:none;' id='"+select_options[i].replace(/\s/g,"")+"_"+select_options[j].replace(/\s/g,"")+"'><iframe src='./ALL_HTMLS/"+ select_options[i] +"_"+select_options[j]+".html' style='border: 0; width: 100%; height: 100%'></iframe></div>";
+        //   }
+        // }
+        document.getElementById("purpose1").innerHTML = z;
+        document.getElementById("purpose2").innerHTML = x;
+        
+    </script>
+  </body> 
+</html>

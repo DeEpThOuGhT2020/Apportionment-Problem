@@ -1,0 +1,32 @@
+<html> 
+  <head> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        const select_options = ["Select", "Adam", "Hamilton", "Webster","Huntington Hill","Jefferson","Difference_SC","Difference_ST"];
+    </script>
+    <script>
+        $(function(){
+            $("#purpose").change(function(){
+                var i = this.value;
+                var y = "<div id='"+select_options[i].replace(/\s/g,"")+"'><iframe src='./HTML/"+ select_options[i] +".html' scrolling='no' style='margin: 10; height: 90%; width:98%; overflow-y: hidden'></iframe></div>";
+                if(i!=0){
+                    document.getElementById("all_divs").innerHTML = y;
+                }
+            });
+        });
+    </script>
+  </head> 
+
+  <body> 
+    <select id='purpose'>
+    </select>
+    <div id="all_divs"></div>
+    <script>
+        var x ="",y="", i;
+        for (i=0; i< select_options.length; i++) {
+          x = x + "<option value='" + i + "'>" + select_options[i] + "</option>";
+        }
+        document.getElementById("purpose").innerHTML = x;
+    </script>
+  </body> 
+</html>
